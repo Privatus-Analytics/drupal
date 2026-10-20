@@ -1,0 +1,49 @@
+privatus_analytics.settings:
+  type: config_object
+  label: 'Privatus Analytics settings'
+  mapping:
+    site_id:
+      type: string
+      label: 'Site ID'
+    script_host:
+      type: string
+      label: 'Script host'
+    spa:
+      type: string
+      label: 'Single-page app mode'
+    manual:
+      type: boolean
+      label: 'Manual pageviews'
+    modules:
+      type: sequence
+      label: 'Tracker modules'
+      sequence:
+        type: string
+        label: 'Module'
+    domains:
+      type: string
+      label: 'Allowed domains'
+    excluded_paths:
+      type: string
+      label: 'Excluded paths'
+    path_masks:
+      type: string
+      label: 'Path masks'
+    extra_params:
+      type: string
+      label: 'Extra query parameters'
+    canonical:
+      type: boolean
+      label: 'Use canonical URL'
+    hash:
+      type: boolean
+      label: 'Hash routing'
+    exclude_admin_pages:
+      type: boolean
+      label: 'Do not track administration pages'
+    excluded_roles:
+      type: sequence
+      label: 'Roles that are not tracked'
+      sequence:
+        type: string
+        label: 'Role ID'

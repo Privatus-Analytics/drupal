@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Adds the Privatus Analytics tracking script to pages.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function privatus_analytics_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name === 'help.page.privatus_analytics') {
+    $output = '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('Privatus Analytics counts visits without cookies and without personal data. This module adds its tracking script to your pages. You need a Privatus Analytics account to see reports.') . '</p>';
+    $output .= '<h3>' . t('Uses') . '</h3>';
+    $output .= '<p>' . t('Enter your site id on the <a href=":url">settings page</a>. Nothing is loaded until you do.', [':url' => Url::fromRoute('privatus_analytics.settings')->toString()]) . '</p>';
+    return $output;
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function privatus_analytics_page_attachments(array &$attachments) {
+  \Drupal::service('privatus_analytics.tracker_attachment')->attach($attachments);
+}

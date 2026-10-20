@@ -1,0 +1,14 @@
+site_id: ''
+script_host: 'https://privatusstats.com'
+spa: auto
+manual: false
+modules:
+  - engage
+domains: ''
+excluded_paths: ''
+path_masks: ''
+extra_params: ''
+canonical: false
+hash: false
+exclude_admin_pages: true
+excluded_roles: []

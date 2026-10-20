@@ -1,0 +1,4 @@
+services:
+  privatus_analytics.tracker_attachment:
+    class: Drupal\privatus_analytics\TrackerAttachment
+    arguments: ['@config.factory', '@current_user', '@router.admin_context']

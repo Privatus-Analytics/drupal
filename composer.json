@@ -1,0 +1,23 @@
+{
+  "name": "drupal/privatus_analytics",
+  "type": "drupal-module",
+  "description": "Adds the cookieless Privatus Analytics tracking script to your Drupal pages.",
+  "keywords": ["Drupal", "analytics", "privacy", "cookieless", "gdpr"],
+  "homepage": "https://www.drupal.org/project/privatus_analytics",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Two Phase LLC",
+      "homepage": "https://privatusanalytics.com"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/privatus_analytics",
+    "source": "https://git.drupalcode.org/project/privatus_analytics",
+    "docs": "https://privatusanalytics.com/docs/install/drupal"
+  },
+  "require": {
+    "php": ">=8.1",
+    "drupal/core": "^10.3 || ^11"
+  }
+}

@@ -1,0 +1,6 @@
+name: Privatus Analytics
+type: module
+description: 'Adds the cookieless Privatus Analytics tracking script to your pages. No cookies and no personal data.'
+package: Statistics
+core_version_requirement: ^10.3 || ^11
+configure: privatus_analytics.settings

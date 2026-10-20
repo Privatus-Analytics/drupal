@@ -1,0 +1,5 @@
+privatus_analytics.settings:
+  title: 'Privatus Analytics'
+  description: 'Set the site id and options for the Privatus Analytics tracking script.'
+  parent: system.admin_config_system
+  route_name: privatus_analytics.settings

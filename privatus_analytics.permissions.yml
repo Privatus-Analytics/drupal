@@ -1,0 +1,8 @@
+administer privatus analytics:
+  title: 'Administer Privatus Analytics'
+  description: 'Change the site id, script host and tracking options.'
+  restrict access: true
+
+bypass privatus analytics tracking:
+  title: 'Do not track with Privatus Analytics'
+  description: 'Visits by users with this permission are not counted. Give it to editors and administrators so that your own visits stay out of your reports.'

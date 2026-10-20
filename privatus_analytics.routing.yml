@@ -1,0 +1,7 @@
+privatus_analytics.settings:
+  path: '/admin/config/system/privatus-analytics'
+  defaults:
+    _form: '\Drupal\privatus_analytics\Form\SettingsForm'
+    _title: 'Privatus Analytics'
+  requirements:
+    _permission: 'administer privatus analytics'
