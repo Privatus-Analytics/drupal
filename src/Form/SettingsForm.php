@@ -68,8 +68,8 @@ class SettingsForm extends ConfigFormBase {
     $form['intro'] = [
       '#type' => 'item',
       '#markup' => $this->t('Privatus Analytics uses no cookies and stores nothing on visitors\' devices. Once you save a site id, visitors\' browsers load a script from the Privatus Analytics service and send it anonymous page view data. Nothing is sent before that. <a href=":terms">Terms of service</a> | <a href=":privacy">Privacy policy</a>', [
-        ':terms' => 'https://privatusanalytics.com/terms',
-        ':privacy' => 'https://privatusanalytics.com/privacy',
+        ':terms' => 'https://privatusanalytics.com/legal/terms',
+        ':privacy' => 'https://privatusanalytics.com/legal/privacy',
       ]),
     ];
 

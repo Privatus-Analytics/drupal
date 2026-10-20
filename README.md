@@ -71,8 +71,8 @@ width, the time zone name and event names to
 memory to derive an approximate country and to count unique visits, and it is
 not stored.
 
-* Terms of service: https://privatusanalytics.com/terms
-* Privacy policy: https://privatusanalytics.com/privacy
+* Terms of service: https://privatusanalytics.com/legal/terms
+* Privacy policy: https://privatusanalytics.com/legal/privacy
 
 ## Caching
 
